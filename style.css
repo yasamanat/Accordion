@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   
+}
+.button{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background: #000;
+    color: antiquewhite;
+    cursor: pointer;
+
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    /* border: solid 3px ; */
+    /* border-radius: 15px; */
+    /* margin: 15px ; */
+}
+.awnser {
+    border: solid 2px black ;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
