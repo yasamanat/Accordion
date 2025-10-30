@@ -3,14 +3,20 @@
     margin: 0px;
     box-sizing: border-box;    
 }
+body{
+    font-family: Roboto Mono;
+}
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin: 100px;
    
 }
 .button{
+    width: 500px;
+    height: 50px;
     padding: 10px 20px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -19,9 +25,11 @@
     cursor: pointer;
 
 }
+
 .tab {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px 20px;
     /* border: solid 3px ; */
     /* border-radius: 15px; */
@@ -31,4 +39,5 @@
     border: solid 2px black ;
     padding: 20px 30px;
     border-radius: 15px;
+    display: none;
 }
