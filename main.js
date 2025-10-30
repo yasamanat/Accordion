@@ -5,12 +5,19 @@ btn.forEach(btns => {
     
     btns.addEventListener("click" , ()=>{
         const content = btns.nextElementSibling;
-         btn.forEach (otherbtn => {
+        const isCurrentlyOpen = content.style.display === 'block';
+        
+        // Close all accordions first
+        btn.forEach (otherbtn => {
             const othercontent = otherbtn.nextElementSibling;
             if (othercontent !== null ){
                 othercontent.style.display = 'none';
             }
-         })
-         content.style.display = 'block';
+        })
+        
+        // If the clicked accordion wasn't open, open it
+        if (!isCurrentlyOpen) {
+            content.style.display = 'block';
+        }
     });
 })
